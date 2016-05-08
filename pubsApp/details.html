@@ -1,0 +1,49 @@
+﻿<h2>{{action}} Title</h2>
+<form name="titleform" class="form-horizontal">
+    <div class="control-group" ng-class="{error: titleform.title_id.$error.required}">
+        <label class="control-label" for="title_id">Title ID</label>
+        <div class="controls">
+            <input type="text" ng-model="title.title_id" id="title_id" name="title_id" placeholder="" />
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: titleform.title1.$error.required}">
+        <label class="control-label" for="title">Title</label>
+        <div class="controls">
+            <input type="text" ng-model="title.title1" id="title1" name="title1" placeholder="" />
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: titleform.type.$error.required}">
+        <label class="control-label" for="type">Type</label>
+        <div class="controls">
+            <input type="text" ng-model="title.type" id="type" name="type" placeholder="" />
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: titleform.pub_id.$required}">
+        <label class="control-label" for="pub_id">Pub ID</label>
+        <div class="controls">
+            <input type="text" ng-model="title.pub_id" id="pub_id" name="pub_id" placeholder="" />
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: titleform.notes.$invalid}">
+        <label class="control-label" for="notes">Notes</label>
+        <div class="controls">
+            <input type="text" ng-model="title.notes" id="notes" name="notes" placeholder="" />
+        </div>
+    </div>
+    <div class="control-group" ng-class="{error: titleform.pubdate.$invalid}">
+        <label class="control-label" for="pubdate">Publication Date</label>
+        <div class="controls">
+            <input type="text" ng-model="pubdate" id="pubdate" name="pubdate" placeholder="" />
+        </div>
+    </div>
+
+
+
+    <div class="form-actions">
+        <button ng-click="save()" class="btn btn-primary">
+            {{action}}
+        </button>
+        <a href="#/" class="btn">cancel</a>
+    </div>
+</form>
+
